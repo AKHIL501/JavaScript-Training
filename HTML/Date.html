@@ -1,0 +1,36 @@
+<html>
+<body>
+Current date and time :<span id="disp"></span>
+<script>
+
+document.getElementById('disp').innerHTML=Date();
+</script>
+
+<script>  
+var date=new Date();  
+var day=date.getDate();  
+var month=date.getMonth()+1;  
+var year=date.getFullYear();  
+document.write("<br>Date is: "+day+"/"+month+"/"+year);  
+</script>
+<br/>
+
+JavaScript Current Time Example
+Let's see the simple example to print current time of system.
+<br/>
+Current Time: <span id="txt"></span>  
+<script>  
+var today=new Date();  
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+</script>  
+
+<br/>
+
+
+
+  
+</body>
+</html>

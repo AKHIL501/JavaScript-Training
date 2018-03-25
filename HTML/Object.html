@@ -1,0 +1,50 @@
+<html>
+<body>
+<script> 
+//Object literal 
+emp={id:102,name:"Akhil",salary:40000}  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+</script> 
+<br/>
+
+<script>  
+//Instance
+var student = new Object();
+student.Rollnumber=501;
+student.name="Akhil";
+student.Branch="cse";
+document.write(student.Rollnumber+" "+student.name+" "+student.Branch);
+</script>
+
+<br/>
+
+<script> 
+//Constructor 
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+}  
+e=new emp(103,"tejaswi",40000);  
+  
+document.write(e.id+" "+e.name+" "+e.salary);  
+</script>  
+  <br/>
+  <script>  
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+  
+this.changeSalary=changeSalary;  
+function changeSalary(otherSalary){  
+this.salary=otherSalary;  
+}  
+}  
+e=new emp(103,"teju",40000);  
+document.write(e.id+" "+e.name+" "+e.salary);  
+e.changeSalary(45000);  
+document.write("<br>"+e.id+" "+e.name+" "+e.salary);  
+</script>
+</body>
+</html>

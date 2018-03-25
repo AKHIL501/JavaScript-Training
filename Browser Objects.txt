@@ -1,0 +1,12 @@
+Browser Object Model
+Browser Object Model (BOM)
+The Browser Object Model (BOM) is used to interact with the browser.
+
+The default object of browser is window means you can call all the functions of window by specifying window or directly. For example:
+
+window.alert("hello javatpoint");  
+is same as:
+
+alert("hello javatpoint");  
+You can use a lot of properties (other objects) defined underneath the window object like document, history, screen, navigator, location, innerHeight, innerWidth,
+

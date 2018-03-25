@@ -1,0 +1,52 @@
+avascript - document.getElementsByTagName() method
+getElementsByTagName() method
+Example of getElementsByTagName()
+The document.getElementsByTagName() method returns all the element of specified tag name.
+
+The syntax of the getElementsByTagName() method is given below:
+
+document.getElementsByTagName("name")  
+Here, name is required.
+
+Example of document.getElementsByTagName() method
+In this example, we going to count total number of paragraphs used in the document. To do this, we have called the document.getElementsByTagName("p") method that returns the total paragraphs.
+
+<script type="text/javascript">  
+function countpara(){  
+var totalpara=document.getElementsByTagName("p");  
+alert("total p tags are: "+totalpara.length);  
+  
+}  
+</script>  
+<p>This is a pragraph</p>  
+<p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>  
+<p>Let's see the simple example</p>  
+<button onclick="countpara()">count paragraph</button>  
+Output of the above example
+This is a pragraph
+
+Here we are going to count total number of paragraphs by getElementByTagName() method.
+
+Let's see the simple example
+
+count paragraph
+Another example of document.getElementsByTagName() method
+In this example, we going to count total number of h2 and h3 tags used in the document.
+
+<script type="text/javascript">  
+function counth2(){  
+var totalh2=document.getElementsByTagName("h2");  
+alert("total h2 tags are: "+totalh2.length);  
+}  
+function counth3(){  
+var totalh3=document.getElementsByTagName("h3");  
+alert("total h3 tags are: "+totalh3.length);  
+}  
+</script>  
+<h2>This is h2 tag</h2>  
+<h2>This is h2 tag</h2>  
+<h3>This is h3 tag</h3>  
+<h3>This is h3 tag</h3>  
+<h3>This is h3 tag</h3>  
+<button onclick="counth2()">count h2</button>  
+<button onclick="counth3()">count h3</button>  

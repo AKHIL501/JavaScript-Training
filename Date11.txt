@@ -1,0 +1,80 @@
+JavaScript Date Object
+
+The JavaScript date object can be used to get year, month and day. You can display a timer on the webpage by the help of JavaScript date object.
+
+You can use different Date constructors to create date object. It provides methods to get and set day, month, year, hour, minute and seconds.
+
+Constructor
+You can use 4 variant of Date constructor to create date object.
+
+Date()  
+Date(milliseconds)  
+Date(dateString)  
+Date(year, month, day, hours, minutes, seconds, milliseconds)  
+
+
+JavaScript Date Methods
+The important methods of date object are as follows:
+
+Method			Description
+
+getFullYear()		returns the year in 4 digit e.g. 2015. It is a new method and suggested than getYear() which is now deprecated.
+getMonth()		returns the month in 2 digit from 0 to 11. So it is better to use getMonth()+1 in your code.
+getDate()		returns the date in 1 or 2 digit from 1 to 31.
+getDay()		returns the day of week in 1 digit from 0 to 6.
+getHours()		returns all the elements having the given name value.
+getMinutes()		returns all the elements having the given class name.
+getSeconds()		returns all the elements having the given class name.
+getMilliseconds()	returns all the elements having the given tag name.
+
+<html>
+<body>
+Current date and time :<span id="disp"></span>
+<script>
+
+document.getElementById('disp').innerHTML=Date();
+</script>  
+</body>
+</html>
+
+
+JavaScript Current Time Example
+Let's see the simple example to print current time of system.
+
+Current Time: <span id="txt"></span>  
+<script>  
+var today=new Date();  
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+</script>  
+
+
+JavaScript Digital Clock Example
+Let's see the simple example to display digital clock using JavaScript date object.
+
+There are two ways to set interval in JavaScript: by setTimeout() or setInterval() method.
+
+Current Time: <span id="txt"></span>  
+<script>  
+window.onload=function(){getTime();}  
+function getTime(){  
+var today=new Date();  
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+// add a zero in front of numbers<10  
+m=checkTime(m);  
+s=checkTime(s);  
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+setTimeout(function(){getTime()},1000);  
+}  
+//setInterval("getTime()",1000);//another way  
+function checkTime(i){  
+if (i<10){  
+  i="0" + i;  
+ }  
+return i;  
+}  
+</script>  

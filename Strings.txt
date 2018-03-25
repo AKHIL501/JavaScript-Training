@@ -1,0 +1,103 @@
+JavaScript String
+The JavaScript string is an object that represents a sequence of characters.
+
+There are 2 ways to create string in JavaScript
+
+1.By string literal
+2.By string object (using new keyword)
+
+
+1) By string literal
+The string literal is created using double quotes. The syntax of creating string using string literal is given below:
+
+var stringname="string value";  
+Let’s see the simple example of creating string literal.
+
+<script>  
+var str="This is string literal";  
+document.write(str);  
+</script>  
+
+JavaScript String Methods
+Let's see the list of JavaScript string methods with examples.
+
+1.charAt(index)
+2.concat(str)
+3.indexOf(str)
+4.lastIndexOf(str)
+5.toLowerCase()
+6toUpperCase()
+7.slice(beginIndex, endIndex)
+8.trim()
+
+1) JavaScript String charAt(index) Method
+The JavaScript String charAt() method returns the character at the given index.
+
+<script>  
+var str="javascript";  
+document.write(str.charAt(2));  
+</script>  
+
+2) JavaScript String concat(str) Method
+The JavaScript String concat(str) method concatenates or joins two strings.
+
+<script>  
+var s1="javascript ";  
+var s2="concat example";  
+var s3=s1.concat(s2);  
+document.write(s3);  
+</script>  
+
+3) JavaScript String indexOf(str) Method
+The JavaScript String indexOf(str) method returns the index position of the given string.
+
+<script>  
+var s1="javascript from javatpoint indexof";  
+var n=s1.indexOf("from");  
+document.write(n);  
+</script>  
+
+4) JavaScript String lastIndexOf(str) Method
+The JavaScript String lastIndexOf(str) method returns the last index position of the given string.
+
+<script>  
+var s1="javascript from javatpoint indexof";  
+var n=s1.lastIndexOf("java");  
+document.write(n);  
+</script>  
+
+5) JavaScript String toLowerCase() Method
+The JavaScript String toLowerCase() method returns the given string in lowercase letters.
+
+<script>  
+var s1="JavaScript toLowerCase Example";  
+var s2=s1.toLowerCase();  
+document.write(s2);  
+</script>  
+
+6) JavaScript String toUpperCase() Method
+The JavaScript String toUpperCase() method returns the given string in uppercase letters.
+
+<script>  
+var s1="JavaScript toUpperCase Example";  
+var s2=s1.toUpperCase();  
+document.write(s2);  
+</script>  
+
+7) JavaScript String slice(beginIndex, endIndex) Method
+The JavaScript String slice(beginIndex, endIndex) method returns the parts of string from given beginIndex to endIndex. In slice() method, beginIndex is inclusive and endIndex is exclusive.
+
+<script>  
+var s1="abcdefgh";  
+var s2=s1.slice(2,5);  
+document.write(s2);  
+</script>  
+
+8) JavaScript String trim() Method
+The JavaScript String trim() method removes leading and trailing whitespaces from the string.
+
+<script>  
+var s1="     javascript trim    ";  
+var s2=s1.trim();  
+document.write(s2);  
+</script>  

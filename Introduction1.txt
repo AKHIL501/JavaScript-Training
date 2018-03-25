@@ -1,0 +1,77 @@
+JavaScript is an object-based scripting language that is lightweight and cross-platform.
+
+JavaScript is not compiled but translated. The JavaScript Translator (embedded in browser) is responsible to translate the JavaScript code.
+
+Where JavaScript is used
+JavaScript is used to create interactive websites. It is mainly used for:
+
+1.Client-side validation
+2.Dynamic drop-down menus
+3.Displaying data and time
+4.Displaying popup windows and dialog boxes (like alert dialog box, confirm dialog box and prompt dialog box)
+5.Displaying clocks etc.
+
+
+Example:-
+<html>
+<body>
+<h2>Welcome to JavaScript</h2>
+<script>
+document.write("Hello JavaScript by JavaScript");
+</script>
+</body>
+</html>
+
+
+Prerequisite
+Before learning JavaScript, you must have the basic knowledge of HTML.
+
+JavaScript provides 3 places to put the JavaScript code: 
+1.within body tag, 
+2.within head tag and 
+3.external JavaScript file.
+	
+1.Within body tag
+<html>  
+<body>  
+<script type="text/javascript">  
+ alert("Hello Javatpoint");  
+</script>  
+</body>  
+</html>
+
+2.Within head tag
+<html>
+<head>
+<script type="text/javascript">
+function msg(){
+alert("Hello World");
+}
+</script>
+</head>
+<body>
+<h3> Print Hello World In alert</h3>
+<form>
+<input type="button" value="Click Here" onClick="msg()">
+</form>
+</body>
+</html>
+
+3.external JavaScript file.
+<html>  
+<head>  
+<script type="text/javascript" src="message.js"></script>  
+</head>  
+<body>  
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+</body>  
+</html>
+ 
+
+MESSAGE.JS
+function msg(){  
+ alert("Hello Javatpoint");  
+}
